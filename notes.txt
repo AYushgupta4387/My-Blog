@@ -1,0 +1,125 @@
+// CODING EXERCISES AND ASSIGNMENTS - FUNDAMENTALS - 2
+
+/* const country = "India";
+const population = "1.4 Billion";
+const capitalCity = "New Delhi";
+
+function describeCountry1(country, population, capitalCity) {
+    return (`${country} has ${population} people and its capital city is ${capitalCity}.`);
+}
+console.log(describeCountry1(country, population, capitalCity));
+console.log(describeCountry1("Nepal", "10 Million", "Katmaandu"));
+
+const describeCountry2 = function (country, population, capitalCity) {
+    return (`${country} has ${population} people and its capital city is ${capitalCity}.`);
+}
+console.log(describeCountry2(country, population, capitalCity));
+console.log(describeCountry2("Nepal", "10 Million", "Katmaandu"));
+
+const describeCountry3 = (country, population, capitalCity) =>  (`${country} has ${population} people and its capital city is ${capitalCity}.`);
+console.log(describeCountry2(country, population, capitalCity));
+console.log(describeCountry2("Nepal", "10 Million", "Katmaandu")); */
+
+// CODING CHALLENGE 1
+/* const calcAverage = function(score1, score2, score3) {
+    return ((score1 + score2 + score3) / 3);
+}
+
+const team1Average = calcAverage(44, 23, 71);
+const team2Average = calcAverage(95, 154, 49);
+
+const checkWinner = function(team1Average, team2Average) {
+    console.log(team1Average, team2Average);
+
+    if(team1Average > (2 * team2Average)) {
+        return (`Team 1 is the winner!`);
+    } else if(team2Average > (2 * team1Average)) {
+        return (`Team 2 is the winner!`);
+    } else {
+        return (`No team wins.`);
+    }
+}
+
+console.log(checkWinner(team1Average, team2Average)); */
+
+/* const population = ["1 Million", "1.2 Billion", "100 Million", "100 Thousand"];
+
+if(population.length === 4) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+const newCountry = population.push("1");
+console.log(newCountry);
+
+const removedCountry = population.pop();
+console.log(removedCountry); */
+
+/* const ayush = {
+    firstName: "Ayush",
+    friends: ["Esha", "Shubhi", "Pratham"]
+};
+
+console.log(`${ayush["firstName"]} has ${ayush.friends.length} friends, and his best friend is called ${ayush.friends.shift()}.`); */
+
+/* const myCountry = {
+    country: "India",
+    capital: "New Delhi",
+    language: "Hindi",
+    population: 12000000,
+    neighbours: 7,
+
+    describe: function() {
+        return `${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbours} neighbouring countries and a capital called ${this.capital}.`;
+    },
+
+    checkIsIsland: function() {
+        if (this.neighbours > 0) {
+            this.isIsland = true;
+        } else {
+            this.isIsland = false;
+        }
+    }
+};
+
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+console.log(myCountry.describe());
+
+myCountry.checkIsIsland();
+console.log(myCountry.isIsland); */
+
+// CODING CHALLENGE - 3
+const mark = {
+	fullName: "Mark Miller",
+	weight: 108,
+	height: 1.69,
+	calcBMI: function () {
+		this.markBMI = this.weight / this.height ** 2;
+		return this.markBMI;
+	},
+};
+
+const john = {
+	fullName: "John Smith",
+	weight: 92,
+	height: 1.95,
+	calcBMI: function () {
+		this.johnBMI = this.weight / this.height ** 2;
+		return this.johnBMI;
+	},
+};
+
+mark.calcBMI();
+john.calcBMI();
+
+if (mark.markBMI > john.johnBMI) {
+	console.log(
+		`${mark.fullName} (${mark.markBMI}) has greater BMI than ${john.fullName} (${john.johnBMI}).`
+	);
+} else {
+	console.log(
+		`${john.fullName} (${john.johnBMI}) has greater BMI than ${mark.fullName} (${mark.markBMI}).`
+	);
+}

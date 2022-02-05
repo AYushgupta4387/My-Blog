@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-links-container">
+        <a
+          href="#"
+          class="sidebar-link section-btn-1 fund-btn"
+          onclick="changeColorOfSection('1');
+          showClickedSection('1')"
+          >Fundamentals</a
+        >
+        <a
+          href="#"
+          class="sidebar-link section-btn-2"
+          onclick="changeColorOfSection('2');
+          showClickedSection('2')"
+          >Developer Skills</a
+        >
+        <a
+          href="#"
+          class="sidebar-link section-btn-3"
+          onclick="changeColorOfSection('3');
+          showClickedSection('3')"
+          >Behind the Scenes</a
+        >
+        <a
+          href="#"
+          class="sidebar-link section-btn-4"
+          onclick="changeColorOfSection('4');
+          showClickedSection('4');"
+          >Data Structures and Operators</a
+        >
+        <a
+          href="#"
+          class="sidebar-link section-btn-5"
+          onclick="changeColorOfSection('5');
+          showClickedSection('5');"
+          >Functions</a
+        >
+        <a
+          href="#"
+          class="sidebar-link section-btn-6"
+          onclick="changeColorOfSection('6');
+          showClickedSection('6')"
+          >Arrays</a
+        >
+        <a
+          href="#"
+          class="sidebar-link section-btn-7"
+          onclick="changeColorOfSection('7');
+          showClickedSection('7')"
+          >Numbers, dates and timers</a
+        >
+      </div>
+    </div>
+    <div class="main">
+      <!-- NAV -->
+      <div class="nav">
+        <div class="nav-link-container">
+          <a href="#" class="nav-link cpp">C++</a>
+        </div>
+        <div class="nav-link-container nav-link-container-js">
+          <a href="#" class="nav-link js">JavaScript</a>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="content-section fundamentals-content section-1">
+          <h2>LET, CONST and VAR</h2>
+          <p>
+            let and const were introduced in ES6. We use let when we want to
+            allow a variable to change its value in the future, <br />we use
+            const when we don't want the same (immutable variable). Const
+            variables cannot be initialized undeclared.
+            <span class="imp">By default, we should use const</span>.
+          </p>
+          <h2>STRINGS AND TEMPLATE LITERALS</h2>
+          <p>
+            We can use backticks `` to declare strings anywhere. <br />Using ``,
+            creates a newline when we start writing on a new line. <br />We can
+            do any JS inside the curly braces.
+          </p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-1.png"
+              alt=""
+              class="fundamentals-image-1"
+            />
+          </div>
+          <h2>TYPE CONVERSION AND COERCION</h2>
+          <p>
+            Type conversion - When we manually convert a data type. <br />Type
+            coercion - When JavaScript does it automatically for us. To convert
+            a string to a number, use Number() function. Example -
+          </p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-2.png"
+              alt=""
+              class="fundamentals-image-2"
+            />
+          </div>
+          <p>
+            To convert a number to a string, use String() function. Examples of
+            type coercion -
+          </p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-3.png"
+              alt=""
+              class="fundamentals-image-3"
+            />
+          </div>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-4.png"
+              alt=""
+              class="fundamentals-image-4"
+            />
+          </div>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-5.png"
+              alt=""
+              class="fundamentals-image-5"
+            />
+          </div>
+          <p>
+            NOTE - Only + operator coverts numbers to strings, every other
+            mathematical or logical operator converts strings to number by type
+            coercion.
+          </p>
+          <h2>TRUTHY AND FALSY VALUES</h2>
+          <p>
+            To convert any string/number to boolean, we can use Boolean()
+            function. <br />Falsy values - These are the values that when
+            converted to boolean outputs false. They are <br />1) 0 <br />2)
+            Empty string ('') <br />3) undefined <br />4) null <br />5) NaN
+            <br />Truthy values - Apart from the above values, all the other
+            values output truth when converted to boolean.
+          </p>
+          <h2>USING STRICT MODE</h2>
+          <p>
+            To activate strict mode, we have to write ("use strict";) at the top
+            of the JS file.<br />It prevents us from creating new variables when
+            we mis-type a variable name and therefore create a new one, by
+            throwing an error.
+          </p>
+          <h2>FUNCTION DECLARATIONS VS. EXPRESSIONS AND ARROW FUNCTIONS</h2>
+          <p>
+            There are 3 ways to define a function, they are- <br />1) Function
+            declaration - In this way, we can first call a function and then
+            later define it in the code below. Example -
+          </p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-6.png"
+              alt=""
+              class="fundamentals-image-6"
+            />
+          </div>
+          <p>
+            2) Function expression - In this way, we CANNOT first call a
+            function and then later define it in the code below. Example -
+          </p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-7.png"
+              alt=""
+              class="fundamentals-image-7"
+            />
+          </div>
+          <p>
+            3) Arrow functions - This way is best for writing one line
+            functions. <br />Example 1 - This example code has no parenthesis
+            for parameter and no return word.
+          </p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-8.png"
+              alt=""
+              class="fundamentals-image-8"
+            />
+          </div>
+          <p>Example 2 -</p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-9.png"
+              alt=""
+              class="fundamentals-image-9"
+            />
+          </div>
+          <h2>BASIC ARRAY OPERATIONS (METHODS)</h2>
+          <p>
+            1) arrayName.push(newArrayElement) - This method adds an element at
+            the end of the array. This method returns the new length of the
+            array. <br />2) arrayName.unshift(newArrayElement) - This method
+            adds an element at the start of the array. This method returns the
+            new length of the array. <br />3) arrayName.pop() - This method
+            removes an element from the end of the array. This method returns
+            the removed element of the array. <br />4) arrayName.shift() - This
+            method removes an element from the start of the array. This method
+            returns the removed element of the array. <br />5)
+            arrayName.indexOf(arrayElement) - This method returns the index of
+            the array element that we type in. It returns -1 if that element
+            does not exists in the array. <br />6)
+            arrayName.includes(arrayElement) - This method returns true or false
+            depending that element exists in the array or not.
+          </p>
+          <h2>JS OBJECTS</h2>
+          <p>
+            When we try to access a property that does not exists, we get
+            undefined as return value. <br />Difference between dot and bracket
+            notation - <br />NOTE - We use bracket notation whenever we want to
+            use a variable name to refer to a property.
+          </p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-10.png"
+              alt=""
+              class="fundamentals-image-10"
+            />
+          </div>
+          <p>
+            We can even store functions in objects because function expressions
+            are just values. Object methods are just functions, that are defined
+            inside the object. Example -
+          </p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-11.png"
+              alt=""
+              class="fundamentals-image-11"
+            />
+          </div>
+          <p>
+            The best practice to call an object method is to call it once and
+            then store it's result in a variable. <br />Example -
+          </p>
+          <div class="fundamentals-image-container">
+            <img
+              src="images/fundamentals-12.png"
+              alt=""
+              class="fundamentals-image-12"
+            />
+          </div>
+        </div>
+        <div class="content-section dev-skills-content hidden section-2">
+          <h2>HEY HEY</h2>
+        </div>
+        <div class="content-section bts-content hidden section-3"></div>
+        <div
+          class="content-section ds-operators-content hidden section-4"
+        ></div>
+        <div class="content-section functions-content hidden section-5"></div>
+        <div class="content-section arrays-content hidden section-6"></div>
+        <div class="content-section num-time-content hidden section-7"></div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
