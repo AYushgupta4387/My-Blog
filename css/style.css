@@ -44,7 +44,7 @@ p {
   display: none;
 }
 
-.fundamentals-image-container {
+.image-container {
   display: flex;
   justify-content: center;
   padding: 3vh 0;
@@ -79,7 +79,7 @@ img {
   font-family: var(--ff-os);
 }
 
-.nav-link-container:hover  {
+.nav-link-container:hover {
   background-color: var(--bg-secondary-color);
 }
 
@@ -91,7 +91,6 @@ img {
 .content {
   margin: 5vh 10vh 0 10vh;
 }
-
 
 /* SIDEBAR */
 .sidebar {
