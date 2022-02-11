@@ -30,10 +30,22 @@ h2 {
   margin: 1.6vh 0;
 }
 
+@media only screen and (max-width: 800px) {
+  h2 {
+    text-align: center;
+  }
+}
+
 p {
   font-family: var(--ff-code);
   /* margin-bottom: 2.4vh; */
   font-size: 2vh;
+}
+
+@media only screen and (max-width: 800px) {
+  p {
+    text-align: justify;
+  }
 }
 
 .imp {
@@ -83,7 +95,6 @@ img {
     margin: 3vh 0;
   }
 }
-
 
 .nav-link-container {
   padding: 1vh 2vh;
@@ -172,11 +183,11 @@ img {
   cursor: pointer;
   position: absolute;
   right: -10vh;
-  top: 11vh;
+  top: 50vh;
   background-color: #eff1f2;
-  padding: 1.5vh 2vh;
+  padding: 1.2vh 1.2vh;
   border-radius: 5px;
-  opacity: 50%;
+  opacity: 20%;
 }
 
 @media only screen and (max-width: 37.5em) {
