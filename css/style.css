@@ -106,7 +106,8 @@ img {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 3.6vh;
-  font-family: var(--ff-os);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: none;
 }
 
 .nav-link-container:hover {
@@ -199,4 +200,25 @@ img {
 .sb-bars__icon {
   font-size: 2vh;
   color: #3d4449;
+}
+
+/* SCROLLBAR */
+/* Width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--bg-secondary-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-primary-color);
+}
+
+/* Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color);
 }

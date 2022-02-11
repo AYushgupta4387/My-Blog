@@ -17,6 +17,12 @@ const changeColorOfSection = function (sectionNumber) {
   }
 };
 
+const hideSections = function () {
+  for (let i = 0; i < 7; i++) {
+    document.querySelectorAll(".content-section")[i].classList.add("hidden");
+  }
+};
+
 const showClickedSection = function (sectionNumber) {
   if (
     document
@@ -24,53 +30,25 @@ const showClickedSection = function (sectionNumber) {
       .classList.contains("hidden")
   ) {
     if (sectionNumber == 1) {
-      for (let i = 0; i < 7; i++) {
-        document
-          .querySelectorAll(".content-section")
-          [i].classList.add("hidden");
-      }
+      hideSections();
       document.querySelector(`.section-1`).classList.remove("hidden");
     } else if (sectionNumber == 2) {
-      for (let i = 0; i < 7; i++) {
-        document
-          .querySelectorAll(".content-section")
-          [i].classList.add("hidden");
-      }
+      hideSections();
       document.querySelector(`.section-2`).classList.remove("hidden");
     } else if (sectionNumber == 3) {
-      for (let i = 0; i < 7; i++) {
-        document
-          .querySelectorAll(".content-section")
-          [i].classList.add("hidden");
-      }
+      hideSections();
       document.querySelector(`.section-3`).classList.remove("hidden");
     } else if (sectionNumber == 4) {
-      for (let i = 0; i < 7; i++) {
-        document
-          .querySelectorAll(".content-section")
-          [i].classList.add("hidden");
-      }
+      hideSections();
       document.querySelector(`.section-4`).classList.remove("hidden");
     } else if (sectionNumber == 5) {
-      for (let i = 0; i < 7; i++) {
-        document
-          .querySelectorAll(".content-section")
-          [i].classList.add("hidden");
-      }
+      hideSections();
       document.querySelector(`.section-5`).classList.remove("hidden");
     } else if (sectionNumber == 6) {
-      for (let i = 0; i < 7; i++) {
-        document
-          .querySelectorAll(".content-section")
-          [i].classList.add("hidden");
-      }
+      hideSections();
       document.querySelector(`.section-6`).classList.remove("hidden");
     } else if (sectionNumber == 7) {
-      for (let i = 0; i < 7; i++) {
-        document
-          .querySelectorAll(".content-section")
-          [i].classList.add("hidden");
-      }
+      hideSections();
       document.querySelector(`.section-7`).classList.remove("hidden");
     }
   }

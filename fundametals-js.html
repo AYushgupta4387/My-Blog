@@ -609,29 +609,87 @@
             This method is more preferred because now we can input separate
             numbers as well as arrays.
           </p>
-        </div>
-        <div class="image-container">
-          <img src="images/dso-14.png" alt="" />
-        </div>
-        <h2>SHORT CIRCUITING (&& AND ||)</h2>
-        <p>
-          <span class="imp">|| operator -</span><br /><br />It is the same as
-          logical OR operator. It will check the first value, if that's true, it
-          will return that value, if it's false, it will move to the next value.
-          It will continue doing this till a truthy value is reached. If all the
-          values are falsey, it will return the last value.
+          <div class="image-container">
+            <img src="images/dso-14.png" alt="" />
+          </div>
+          <h2>SHORT CIRCUITING (&& AND ||)</h2>
+          <p>
+            <span class="imp">|| operator -</span><br /><br />It is the same as
+            logical OR operator. It will check the first value, if that's true,
+            it will return that value, if it's false, it will move to the next
+            value. It will continue doing this till a truthy value is reached.
+            If all the values are falsey, it will return the last value.
 
-          <br /><br />This returns the first truthy value or if all the values
-          are falsey, it will return the last falsey value.
+            <br /><br />This returns the first truthy value or if all the values
+            are falsey, it will return the last falsey value.
 
-          <br />NOTE - Logical operators Use ANY data type, return ANY data
-          type, follows short-circuiting.
+            <br />NOTE - Logical operators Use ANY data type, return ANY data
+            type, follows short-circuiting.
 
-          <br /><br />EXAMPLES -
-        </p>
-        <div class="image-container">
-          <img src="images/dso-15.png" alt="" />
+            <br /><br />EXAMPLES -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-15.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Nullish Coalescing operator ?? -</span> <br />It
+            is same as || operator, only diff is that, this operator short
+            circuits based on Nullish values instead of falsey values.
+
+            <br /><span class="imp"
+              >NOTE - Nullish values are null and undefined only (not 0 or
+              "").</span
+            >
+
+            <br /><br />EXAMPLE -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-16.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">&& operator -</span> <br />This returns the first
+            falsey value or if all the values are truthy, it will return the
+            last truthy value.
+
+            <br /><br />EXAMPLES -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-17.png" alt="" />
+          </div>
+          <h2>THE FOR OF LOOP</h2>
+          <p>Examples -</p>
+          <div class="image-container">
+            <img src="images/dso-18.png" alt="" />
+          </div>
+          <h2>OPTIONAL CHAINING (FEATURE OF ES2020)</h2>
+          <p>
+            It is used for chaining nested objects. It checks wether the
+            property written before "?" exists or not. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-19.png" alt="" />
+          </div>
+          <p>Another Example -</p>
+          <div class="image-container">
+            <img src="images/dso-20.png" alt="" />
+          </div>
+          <p>
+            Optional Chaining also works for methods. Here it comes b/w the
+            method name and parameters. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-21.png" alt="" />
+          </div>
+          <p>
+            Optional chaining also works for arrays. It basically checks if an
+            array is empty.
+          </p>
+          <p>Example -</p>
+          <div class="image-container">
+            <img src="images/dso-22.png" alt="" />
+          </div>
         </div>
+        <!-- /ds-operators-content -->
         <div class="content-section functions-content hidden section-4"></div>
         <div class="content-section arrays-content hidden section-5"></div>
         <div class="content-section num-time-content hidden section-6"></div>

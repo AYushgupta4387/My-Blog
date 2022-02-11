@@ -16,6 +16,7 @@
 
 .nav-link {
   font-size: 10vh;
+  text-shadow: 1vh 0 var(--bg-secondary-color);
 }
 
 @media only screen and (max-width: 800px) {
