@@ -1,0 +1,31 @@
+.main {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-link {
+  font-size: 10vh;
+}
+
+.nav-link-container {
+  padding: 2vh 4vh;
+  margin: 0;
+}
+
+.nav-link-container:hover {
+  border: solid var(--primary-color) 3px;
+}
+
+.nav-link-container:not(:last-child) {
+  margin-bottom: 3vh;
+}
