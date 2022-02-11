@@ -54,9 +54,21 @@ img {
   width: 50vw;
 }
 
+@media only screen and (max-width: 800px) {
+  img {
+    width: 90vw;
+  }
+}
+
 /* MAIN */
 .main {
   margin-left: 24vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    margin-left: 0;
+  }
 }
 
 /* NAV */
@@ -65,6 +77,13 @@ img {
   margin-top: 5vh;
   margin-left: 3vh;
 }
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    margin: 3vh 0;
+  }
+}
+
 
 .nav-link-container {
   padding: 1vh 2vh;
@@ -92,6 +111,12 @@ img {
   margin: 5vh 10vh 0 10vh;
 }
 
+@media only screen and (max-width: 800px) {
+  .content {
+    margin: 0 1vh;
+  }
+}
+
 /* SIDEBAR */
 .sidebar {
   background-color: var(--bg-secondary-color);
@@ -100,6 +125,24 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar {
+    width: 75%;
+    box-shadow: 2rem 0 5rem rgba(0, 0, 0, 0.15);
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .side-bar-invisible {
+    visibility: hidden;
+  }
+}
+
+.show-sidebar {
+  width: 35rem;
 }
 
 .sidebar-links-container {
@@ -121,4 +164,29 @@ img {
 
 .fund-btn {
   background-color: var(--bg-primary-color);
+}
+
+.sb-bars {
+  visibility: hidden;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: -10vh;
+  top: 2.5vh;
+  background-color: #eff1f2;
+  padding: 1.5vh 2vh;
+  border-radius: 5px;
+  opacity: 50%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sb-bars {
+    visibility: visible;
+  }
+}
+
+.sb-bars__icon {
+  font-size: 4vh;
+  color: #3d4449;
 }
