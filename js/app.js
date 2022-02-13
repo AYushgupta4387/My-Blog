@@ -67,3 +67,13 @@ toggleBtn.addEventListener("click", function () {
     sidebar.classList.remove("side-bar-invisible");
   }
 });
+
+document.querySelector(".main").addEventListener("click", function () {
+  if (sidebar.classList.contains("show-sidebar")) {
+    sidebar.classList.remove("show-sidebar");
+    sidebar.classList.add("side-bar-invisible");
+  } else {
+    sidebar.classList.add("show-sidebar");
+    sidebar.classList.remove("side-bar-invisible");
+  }
+});
