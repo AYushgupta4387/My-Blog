@@ -864,7 +864,127 @@
           </div>
         </div>
         <!-- /ds-operators-content -->
-        <div class="content-section functions-content hidden section-4"></div>
+        <div class="content-section functions-content hidden section-4">
+          <h2>DEFAULT PARAMETERS</h2>
+          <p>Example -</p>
+          <div class="image-container">
+            <img src="images/func-1.png" alt="" />
+          </div>
+          <h2>IMPORTANT</h2>
+
+          <p>
+            When we pass a primitive type as an argument on a function, the
+            function makes a copy of the ORIGINAL VALUE, and works with it.
+
+            <br />
+            On the other hand, when we pass an object as an argument on a
+            function, the function makes a copy of the REFERENCE that points to
+            the place of the memory where the object is stored. This copy is a
+            value itself, is not a reference. Because all of this, the original
+            object can be modified from inside of a function.
+
+            <br /><br />
+            JavaScript is diff - <br />
+            In programming languages, Arguments can be passed by value, or
+            passed by reference
+
+            <br />
+            JS has not passing by reference, only passing by value...
+
+            <br />
+            So, when we pass primitive values, the function works with a value,
+            which is a copy of the original value
+
+            <br />
+            When we pass a reference type, the function works with a value that
+            address to the spot where the original object is in the memory
+            (still is not a reference)
+
+            <br />
+            We should never change the values of non-primitives like objects
+            inside a function, because that can have unforseeable circumstances.
+          </p>
+          <h2>FIRST-CLASS FUNCTIONS -</h2>
+          <p>
+            It means that functions are simply values and just another type of
+            objects. Therefore - <br />
+            We can store functions in variables or as object properties. <br />
+            We can pass functions as arguments in other functions. <br />
+            We can return functions from functions. <br />
+            We can call methods on functions.
+          </p>
+          <h2>HIGHER-ORDER FUNCTIONS -</h2>
+          <p>
+            It basically is a function that recieves a func as an arguement or
+            it returns a func or both. <br />
+            Example -
+          </p>
+          <div class="image-container">
+            <img src="images/func-2.png" alt="" />
+          </div>
+          <h2>THE CALL, APPLY AND BIND METHOD</h2>
+          <div class="image-container">
+            <img src="images/func-3.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">CALL METHOD -</span><br />
+            It is a method that is applied to function because functions are
+            objects. Here the first argument defines that what should "this"
+            keyword be equal to.
+          </p>
+          <div class="image-container">
+            <img src="images/func-4.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">APPLY METHOD -</span><br />
+            Same as call method, only diff is that, second argument is an array
+            of the arguments.
+          </p>
+          <div class="image-container">
+            <img src="images/func-5.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">BIND METHOD -</span><br />
+            This method does not call the function to which it is attached,
+            instead it returns a new function where the "this" keyword is
+            permanently set.
+          </p>
+          <div class="image-container">
+            <img src="images/func-6.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Note -</span> If we try to save the call or apply
+            method, we will get an error, because call() invokes a function
+            immediately, whereas bind() creates a copy of the function with a
+            preset value of 'this'. <br />If we want to call a function later
+            with preset arguments, then we use bind() method.
+
+            <br /><br /><span class="imp">With Event Listeners</span>
+          </p>
+          <div class="image-container">
+            <img src="images/func-7.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Partial application -</span> <br />This means some
+            of the arguments of a function are predefined.
+          </p>
+          <div class="image-container">
+            <img src="images/func-8.png" alt="" />
+          </div>
+          <h2>IIFE - Immediately Invoked Function Expression</h2>
+          <p>
+            It's just a function expression that is only executed once. <br />We
+            have to wrap the function expression around (). <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/func-9.png" alt="" />
+          </div>
+          <h2>AN EXAMPLE OF FUNCTION RETURNING FUNCTION -</h2>
+          <div class="image-container">
+            <img src="images/func-10.png" alt="" />
+          </div>
+        </div>
+        <!-- /functions-content -->
         <div class="content-section arrays-content hidden section-5"></div>
         <div class="content-section num-time-content hidden section-6"></div>
         <div class="content-section num-time-content hidden section-7"></div>
