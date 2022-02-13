@@ -688,6 +688,180 @@
           <div class="image-container">
             <img src="images/dso-22.png" alt="" />
           </div>
+          <h2>
+            LOOPING OVER OBJECTS (OBJECT.KEYS(), OBEJCT.VALUES(),
+            OBJECT.ENTRIES())
+          </h2>
+          <p>
+            We can even loop over objects. <br /><span class="imp"
+              >Property NAMES</span
+            >
+            - This will create an array of property names.<br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-23.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Property VALUES</span> - This will create an array
+            of property values.<br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-24.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Entire object</span> - This will create an array,
+            with each element being a key-value pair. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-25.png" alt="" />
+          </div>
+          <h2>SETS</h2>
+          <p>
+            It is another data structure that only stores unique values.
+            <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-26.png" alt="" />
+          </div>
+          <p>They can be used for all iterables. <br />Example -</p>
+          <div class="image-container">
+            <img src="images/dso-27.png" alt="" />
+          </div>
+          <p>There length can be calculated using the "size" method.</p>
+          <p>
+            It can also be checked if the set includes some element using "has"
+            method. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-28.png" alt="" />
+          </div>
+          <p>
+            We can add elements to sets using "add" method, and we can remove
+            elements using "delete" method.
+
+            <br />We can convert a set to an array -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-29.png" alt="" />
+          </div>
+          <h2>MAPS</h2>
+          <p>
+            Maps are also a data structure that works similar to objects apart
+            from the fact that keys can be anything in maps whereas in objects,
+            they can only be strings. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-30.png" alt="" />
+          </div>
+          <p>To add an entry to map, we use set() property. <br />Example -</p>
+          <div class="image-container">
+            <img src="images/dso-31.png" alt="" />
+          </div>
+          <p>We can even chain the set() properties. <br />Example -</p>
+          <div class="image-container">
+            <img src="images/dso-32.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/dso-33.png" alt="" />
+          </div>
+          <p>
+            We can delete entries using delete() property. It also has has() and
+            size() method.
+          </p>
+          <h2>STRINGS</h2>
+          <p>Examples -</p>
+          <div class="image-container">
+            <img src="images/dso-34.png" alt="" />
+          </div>
+          <p><span class="imp">length method</span></p>
+          <div class="image-container">
+            <img src="images/dso-35.png" alt="" />
+          </div>
+          <p><span class="imp">indexOf() method</span></p>
+          <div class="image-container">
+            <img src="images/dso-36.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">lastIndexOf() method -</span> This gives the index
+            of last occurence
+          </p>
+          <div class="image-container">
+            <img src="images/dso-37.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">slice() method - </span>
+            <br />slice(startingIndex, endingIndex) <br />If we only give
+            startingIndex, it will extract the whole string starting from
+            startingIndex. <br />startingIndex is included and endingIndex is
+            excluded. <br />Length of new string = endingIndex - startingIndex
+            <br />Examples -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-38.png" alt="" />
+          </div>
+          <p>
+            We can also use negative index, which starts from end. <br />NOTE -
+            Last character has the index = -1 <br />Examples -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-39.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Changing case -</span> <br />.toLowerCase()
+            <br />.toUpperCase() <br />Example - Convert "AyuSH" to "AYush"
+          </p>
+          <div class="image-container">
+            <img src="images/dso-40.png" alt="" />
+          </div>
+          <p><span class="imp">Removing white-spaces -</span> <br />.trim()</p>
+          <br />
+          <br />
+          <p>
+            <span class="imp">Replacing strings -</span> <br />.replace("part of
+            string to remove", "new string to be added their") <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-41.png" alt="" />
+          </div>
+          <p>
+            We can also use .replaceAll().<br /><br />
+
+            <br /><span class="imp">Booleans -</span> These methods returns
+            booleans. <br />.includes() <br />.startsWith() <br />.endsWith()
+            <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-42.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Split and join</span><br />split() is to split a
+            big string into array elements on the basis of a separator and
+            vice-versa for join(). <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-43.png" alt="" />
+          </div>
+          <p>
+            Example - We want to capitalize the name passsed into the function.
+          </p>
+          <div class="image-container">
+            <img src="images/dso-44.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Padding -</span> This method adds a specific
+            character to the string. <br />"string".padStart(final length of the
+            string, Character to be added) <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-45.png" alt="" />
+          </div>
+          <p>
+            "string".padEnd(final length of the string, Character to be added)
+            <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-46.png" alt="" />
+          </div>
         </div>
         <!-- /ds-operators-content -->
         <div class="content-section functions-content hidden section-4"></div>
