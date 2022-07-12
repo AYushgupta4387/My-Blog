@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C++</title>
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/fdfca29961.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar side-bar-invisible">
+      <button class="sb-bars">
+        <i class="sb-bars__icon fas fa-bars"></i>
+      </button>
+      <div class="sidebar-links-container">
+        <a
+          href="#"
+          class="sidebar-link section-btn-1 fund-btn"
+          onclick="changeColorOfSection('1');
+          showClickedSection('1')"
+          >Extra small Bits</a
+        >
+        <a
+          href="#"
+          class="sidebar-link section-btn-2"
+          onclick="changeColorOfSection('2');
+          showClickedSection('2')"
+          >Behind The Scenes</a
+        >
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+      <!-- NAV -->
+      <div class="nav">
+        <div class="nav-link-container nav-link-container-selected">
+          <a href="#" class="nav-link cpp">C++</a>
+        </div>
+        <div class="nav-link-container">
+          <a href="#" class="nav-link js">JavaScript</a>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="content-section section-1">
+          <h2>SESSION-1 to SESSION-5</h2>
+          <p>
+            Format should be - <br />
+            <span class="imp"><code>
+              #include &lt;iostream&gt; <br />
+              #include &lt;bits/stdc++.h&gt; <br />
+              <br />
+              using namespace std;
+            </code></span>
+          </p>
+        </div>
+        <!-- /content-section -->
+      </div>
+      <!-- /content -->
+    </div>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
