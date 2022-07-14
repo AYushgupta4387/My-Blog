@@ -369,7 +369,8 @@
             Scope - Environment in which a certain variable is declared. There
             are <br />1. Global scope <br />2. Function/local scope <br />3.
             Block scope - Variables are accessible only inside block (if block,
-            for loop block, etc). This only applies to let and const variables.
+            for loop block, etc). This only applies to let and const variables. <br>
+            let/const are block-scope and var is function-scope.
 
             <br /><br />
             <div class="image-container">
@@ -410,6 +411,14 @@
           </p>
           <div class="image-container">
             <img src="images/Hoisting.png" alt="" />
+          </div>
+          <p><span class="imp">Temporal Dead Zone -</span> <br>
+            It's basically the region of the scope in which the variable is defined, 
+            but can't be used in any way. So it is as if the variable didn't even exist. <br>
+            Each and every let and const variable get their own Temporal Dead Zone that starts at the beginning of the scope until the line where it is defined. The variable is only safe to use after the TDZ.
+          </p>
+          <div class="image-container">
+            <img src="images/TDZ.png" alt="" />
           </div>
           <h2>THIS KEYWORD</h2>
           <p>
