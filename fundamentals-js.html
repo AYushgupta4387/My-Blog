@@ -1190,6 +1190,46 @@
             <div class="image-container">
               <img src="images/How-to-implement-prototyple-inheritance.png" alt="" />
             </div>
+            <h2>CONSTRUCTOR FUNCTION AND THE NEW OPERATOR</h2>
+            <p>All the constructor functions begins with a capital letter. <br>
+              An arrow function will actually not work as a function constructor, that's because it doesn't have its own this keyword.</p>
+            <div class="image-container">
+              <img src="images/oop-1.png" alt="" />
+            </div>
+            <p>What happens when the line "new Person('Jonas', 1991);" gets executed - <br>
+              1) A new empty object is created. <br>
+              2) Then afterwards the function is called and in this function call the this keyword will be set to this newly created object. <br>
+              3) Then this newly created object is linked to a prototype. <br>
+              4) Then the object that was created in the beginning is then automatically returned from the constructor function.</p>
+            <div class="image-container">
+              <img src="images/oop-2.png" alt="" />
+            </div>
+            <h2>PROTOTYPES</h2>
+            <p>Each and every function in JavaScript automatically has a property called prototype, this includes the construtor functions too. <br>
+
+              Prototype is an object to which the actual object's child objects are linked. <br>
+              
+              Every object that's created by a certain constructor function will get access to all the methods and properties that we define on the constructor's prototype property. (eg - Person.prototype) <br>
+              
+              Here, Person.prototype is the prototype of jonas object. <br>
+              
+              We should never create methods inside constructor functions, it is a BAD PRACTICE. Instead we define it in the constructor functions prototype object.</p>
+            <div class="image-container">
+              <img src="images/oop-3.png" alt="" />
+            </div>
+            <h2>PROTOTYPAL INHERITANCE AND THE PROTOTYPE CHAIN</h2>
+            <div class="image-container">
+              <img src="images/prototyple-inheritance.png" alt="" />
+            </div>
+            <p>The .prototype object of the constructor function has a property called .constructor, that points back to the Person function. <span class="imp">Person.prototype.constructor === Person</span> <br> <br>
+            Prototype chain is very similar to scope chain. <br>
+            In the prototype chain whenever JavaScript can't find a certain property or method in a certain object, it's gonna look up into the next prototype in the prototype chain and see if it can find it there.</p>
+            <div class="image-container">
+              <img src="images/prototyple-chain.png" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="images/oop-4.png" alt="" />
+            </div>
         </div>
         <div class="content-section num-time-content hidden section-7"></div>
       </div>
