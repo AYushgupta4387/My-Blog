@@ -137,6 +137,9 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -157,7 +160,9 @@ img {
 }
 
 .sidebar-links-container {
-  padding-top: 6vh;
+  /* padding-top: 6vh; */
+  width: 80%;
+  text-align: center;
 }
 
 .sidebar-link {
@@ -166,8 +171,20 @@ img {
   font-size: 2.4vh;
   font-family: var(--ff-os);
   display: block;
-  padding: 1vh 3vh 1vh 5vh;
+  padding: 2vh 3vh 2vh 3vh;
+  margin: 2vh 0;
+  border: 2px solid var(--bg-primary-color);
+  border-radius: 5px;
+  /* border-top: 1px solid var(--bg-primary-color); */
 }
+
+/* .sidebar-link:first-child {
+  border-top: 2px solid var(--bg-primary-color);
+}
+
+.sidebar-link:last-child {
+  border-bottom: 2px solid var(--bg-primary-color);
+} */
 
 .sidebar-link:hover {
   background-color: var(--bg-primary-color) !important;
