@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/fdfca29961.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE STYLE -->
+    <style>
+      .section-btn-7 {
+        background-color: #222831;
+      }
+
+      .section-btn-1,
+      .section-btn-3,
+      .section-btn-4,
+      .section-btn-5,
+      .section-btn-6,
+      .section-btn-2 {
+        background-color: #393e46;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar side-bar-invisible">
+      <button class="sb-bars">
+        <i class="sb-bars__icon fas fa-bars"></i>
+      </button>
+      <div class="sidebar-links-container">
+        <a
+          href="./fundamentals-js.html"
+          class="sidebar-link section-btn-1 fund-btn"
+          >Fundamentals</a
+        >
+        <a href="./Behind-the-scenes.html" class="sidebar-link section-btn-2"
+          >Behind The Scenes</a
+        >
+        <a href="./DS-and-operators.html" class="sidebar-link section-btn-3"
+          >Data Structures and Operators</a
+        >
+        <a href="./functions.html" class="sidebar-link section-btn-4"
+          >Functions</a
+        >
+        <a href="./arrays.html" class="sidebar-link section-btn-5">Arrays</a>
+        <a href="./oop.html" class="sidebar-link section-btn-6"
+          >Object Oriented Programming</a
+        >
+        <a href="./async-js.html" class="sidebar-link section-btn-7"
+          >Asynchronous JavaScript</a
+        >
+      </div>
+    </div>
+    <!-- MAIN -->
+    <div class="main">
+      <!-- NAV -->
+      <div class="nav">
+        <div class="nav-link-container">
+          <a href="#" class="nav-link cpp">C++</a>
+        </div>
+        <div class="nav-link-container nav-link-container-selected">
+          <a href="#" class="nav-link js">JavaScript</a>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <!-- ASYNCHRONOUS JS -->
+        <div class="content-section Asynchronous-JS-content section-7">
+          <h2>ASYNC JS, AJAX and API</h2>
+          <p>
+            Synchronous code - <br />
+            Code that is executed line by line, each line of code waits for the
+            previous code to finish. Blocks code execution.
+          </p>
+          <div class="image-container">
+            <img src="images/sync-code.png" alt="" />
+          </div>
+          <p>
+            Asynchronous code - <br />
+            Blocking code gets executed in the BACKGROUND, does not block code
+            execution. Also called non-blocking code.
+          </p>
+          <div class="image-container">
+            <img src="images/async-code.png" alt="" />
+          </div>
+          <p>
+            AJAX: Asynchronous JavaScript And XML - <br />
+            Allows us to communicate with remote web servers in an asynchronous
+            way. With AJAX calls, we can request data from servers dynamically,
+            without reloading the page.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

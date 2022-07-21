@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/fdfca29961.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- <link rel="stylesheet" href="../js-css/behind-the-scenes.css"> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE STYLE -->
+    <style>
+      .section-btn-2 {
+        background-color: #222831;
+      }
+
+      .section-btn-1,
+      .section-btn-3,
+      .section-btn-4,
+      .section-btn-5,
+      .section-btn-6,
+      .section-btn-7 {
+        background-color: #393e46;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar side-bar-invisible">
+      <button class="sb-bars">
+        <i class="sb-bars__icon fas fa-bars"></i>
+      </button>
+      <div class="sidebar-links-container">
+        <a
+          href="./fundamentals-js.html"
+          class="sidebar-link section-btn-1 fund-btn"
+          >Fundamentals</a
+        >
+        <a href="./Behind-the-scenes.html" class="sidebar-link section-btn-2"
+          >Behind The Scenes</a
+        >
+        <a href="./DS-and-operators.html" class="sidebar-link section-btn-3"
+          >Data Structures and Operators</a
+        >
+        <a href="./functions.html" class="sidebar-link section-btn-4"
+          >Functions</a
+        >
+        <a href="./arrays.html" class="sidebar-link section-btn-5">Arrays</a>
+        <a href="./oop.html" class="sidebar-link section-btn-6"
+          >Object Oriented Programming</a
+        >
+        <a href="./async-js.html" class="sidebar-link section-btn-7"
+          >Asynchronous JavaScript</a
+        >
+      </div>
+    </div>
+    <!-- MAIN -->
+    <div class="main">
+      <!-- NAV -->
+      <div class="nav">
+        <div class="nav-link-container">
+          <a href="#" class="nav-link cpp">C++</a>
+        </div>
+        <div class="nav-link-container nav-link-container-selected">
+          <a href="#" class="nav-link js">JavaScript</a>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <!-- BEHIND THE SCENES -->
+        <div class="content-section bts-content section-2">
+          <h2>ABOUT JAVASCRIPT</h2>
+          <p>
+            JavaScript properties - <br />1.
+            <span class="imp">High level</span> - In JS, we don't have to manage
+            memory. It is automatically done by the computer. <br />2.
+            <span class="imp">Garbage-Collected</span> - It automatically cleans
+            up unused memory. <br />3.
+            <span class="imp">Interpreted or just-in-time compiled</span> -
+            First the whole code gets compiled inside the JS engine and then it
+            gets executed. <br />4. <span class="imp">Multi-paradigm</span> -
+            <br />a) Procedural programming <br />b) Object-oriented programming
+            <br />c) Functional programming <br />5.
+            <span class="imp">Prototype-based object-oriented</span> - Almost
+            everything in JS is objects except for primitive datatypes such as
+            numbers, booleans. <br />6.
+            <span class="imp">First class functions</span> - This simply means
+            that functions are just treated as variables. We can pass them into
+            other functions and return them from functions. <br />7.
+            <span class="imp">Dynamically typed</span> - Variable types are not
+            defined while declaring them, they become known only during the
+            runtime. Datatype of variable is automatically changed. <br />8.
+            <span class="imp">Single-thread</span> <br />9.
+            <span class="imp">Non-blocking event loop</span>
+          </p>
+          <h2>
+            COMPILATION VS INTERPRETATION VS JUST-IN-TIME (JIT) COMPILATION
+          </h2>
+          <p>
+            1. <span class="imp">Compilation</span> - Entire code is coverted to
+            machine code at once, and written to a binary file that can be later
+            executed by the computer.
+
+            <br />
+            2. <span class="imp">Interpretation</span> - Interpreter runs
+            through the source code and executes it line by line.
+
+            <br />3. <span class="imp">Just-in-time compilation</span> - Entire
+            code is converted to machine code at once and then is executed
+            immediately.
+
+            <br /><br /><span class="imp"
+              >JavaScript Engine = Call Stack + Memory Heap</span
+            >
+
+            <br /><span class="imp">Top level code</span> - Code that is NOT
+            inside any function.
+          </p>
+          <div class="image-container">
+            <img
+              src="images/Compilation-Interpretation-Jit-Compilation.png"
+              alt=""
+            />
+          </div>
+          <h2>EXECUTION CONTEXT</h2>
+          <p>
+            Environment in which a piece of JS code is executed. It stores all
+            the necessary information for some code to be executed.
+            <span class="imp"
+              >Execution context is the pizza box where we eat the pizza.</span
+            >
+            <br />It contains - <br />1. Variable Environment It contains -
+            <br />a) let, const and var declarations <br />b) Function
+            declarations <br />c) argument objects <br />2. Scope Chain <br />3.
+            this keyword <br />NOTE - Arrow functions do not contain argument
+            object and this keyword.
+          </p>
+          <h2>HOW EXECUTION OF JS CODE HAPPENS</h2>
+          <p>
+            1. Creation of GLOBAL EXECUTION CONTEXT for top level code. <br />2.
+            Execution of top-level code (inside Global execution context).
+            <br />3. Execution of functions and waiting for callbacks (For each
+            function call, a new execution context is created).
+
+            <br /><br /><span class="imp"
+              >Call Stack = All the execution context together.</span
+            >
+            <br />Call Stack is a "place" where execution contexts get stacked
+            on top of each other, to keep track of where we are in the execution
+            process.
+
+            <br />In the call stack, once a function is CALLED inside the JS
+            code, it's execution context is created, once that function gets
+            executed then only the EC below gets executed. <br />For each
+            function call a new EC gets stacked in the call stack and gets
+            executed first, unless it has a function call inside it to another
+            function.
+          </p>
+          <h2>SCOPING/SCOPE CHAIN</h2>
+          <p>
+            Scope - Environment in which a certain variable is declared. There
+            are <br />1. Global scope <br />2. Function/local scope <br />3.
+            Block scope - Variables are accessible only inside block (if block,
+            for loop block, etc). This only applies to let and const variables.
+            <br />
+            let/const are block-scope and var is function-scope.
+
+            <br /><br />
+            <span class="imp">NOTE</span> - In strict mode, functions are also
+            block scoped, this means, a function defined inside a code block is
+            accessible inside that block only.
+
+            <br /><br /><span class="imp">Lexical Scoping</span> - Scoping is
+            controlled by the placement of functions and blocks in the code.
+
+            <br />JS looks for variables inside the current scope and then
+            outside the current scope. If a variable with the same name exists
+            inside the current scope as well as outside it, then the one in the
+            current scope will be used.
+
+            <br /><span class="imp">Check out the image below.</span>
+          </p>
+
+          <div class="image-container">
+            <img src="images/Three-Scope-Types.png" alt="" />
+          </div>
+
+          <div class="image-container">
+            <img src="images/Scoping-vs-Call-Stack.png" alt="" />
+          </div>
+          <h2>HOISTING</h2>
+          <p>
+            <span class="imp">Hoisting</span> - Makes some types of variable
+            accessible/usable in the code before they are actually declared.
+            Variables are lifted to the top of their scope.
+
+            <br />Before execution, code is scanned for variable declarations,
+            and for each variable, a new property is created in the VARIABLE
+            ENVIRONMENT OBJECT.
+
+            <br />Only function declarations and variables declared with var are
+            hoisted. Variables declared with var have an initial value of
+            "undefined". <br /><span class="imp"
+              >Check out the image below.</span
+            >
+          </p>
+          <div class="image-container">
+            <img src="images/Hoisting.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Temporal Dead Zone -</span> <br />
+            It's basically the region of the scope in which the variable is
+            defined, but can't be used in any way. So it is as if the variable
+            didn't even exist. <br />
+            Each and every let and const variable get their own Temporal Dead
+            Zone that starts at the beginning of the scope until the line where
+            it is defined. The variable is only safe to use after the TDZ.
+          </p>
+          <div class="image-container">
+            <img src="images/TDZ.png" alt="" />
+          </div>
+          <h2>THIS KEYWORD</h2>
+          <p>
+            -> "this" keyword is basically a special variable that is created
+            for every execution context and therefore every function.​
+
+            <br />It will always take the value of the owner of the function in
+            which, the this keyword is used.​
+
+            <br />The value of the "this" keyword is not static. It's not always
+            the same. It depends on how the function is actually called. And its
+            value is only assigned when the function is actually called.​
+
+            <br /><br />This keyword points to - <br />1. In case of methods -
+            Object that is calling the method <br />2. In case of simple
+            function call - undefined (only in strict mode, otherwise it points
+            to window object) <br />3. In case of Arrow functions - this of
+            surrounding function/parent scope (lexical this) <br />4. In case of
+            Event listener - DOM element that the handler is attached to
+
+            <br />If we console.log(this); We will get the window object. It is
+            the parent object of the global scope.
+          </p>
+          <div class="image-container">
+            <img src="images/bts-8.png" alt="" />
+          </div>
+          <p>
+            FOUR DIFFERENT WAYS IN WHICH FUNCTIONS CAN BE CALLED AND WHERE
+            "THIS" KEYWORD POINTS IN EACH CASE
+          </p>
+          <p>
+            <span class="imp">1. Calling a function as an object method:</span>
+            <br />Here, "this" = Object that is CALLING the method.
+
+            <br />When we call a method, the this keyword inside that method
+            will simply point to the object on which the method is called.​
+
+            <br />Examples -
+          </p>
+          <div class="image-container">
+            <img src="images/bts-1.png" alt="" />
+          </div>
+          <p>
+            <span class="imp"
+              >2. Simply calling function as a normal function:</span
+            >
+            <br />Here, "this" = undefined​​
+
+            <br />However, that is only valid for strict mode. So if you're not
+            in strict mode, this will actually point to the global object,​
+            which in case of the browser is the window object.
+
+            <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/bts-2.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">3. Arrow functions</span> <br />Here, "this" =
+            "this" of parent function (lexical this)
+
+            <br />Arrow functions do not get their own "this" keyword. Instead,
+            if you use the "this" keyword in an arrow function,it will simply be
+            the "this" keyword of the surrounding function which is the parent
+            function. In technical terms, this is called the 'lexical "this"
+            keyword'.
+
+            <br /><br /><span class="imp">4. Event listener "this"</span>
+            <br />Here, "this" = DOM element that the handler is attached to
+
+            <br />If a function is called as an event listener, then the this
+            keyword will always point to the DOM element that the handler
+            function is attached to.
+
+            <br />The "this" keyword points to the window object in three cases:
+            <br />a. if the "this" keyword is outside of any function (just
+            outside in global scope) Example -
+          </p>
+          <div class="image-container">
+            <img src="images/bts-3.png" alt="" />
+          </div>
+          <p>
+            b. If the lexical scope (parent scope) of arrow function is global
+            scope <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/bts-4.png" alt="" />
+          </div>
+          <p>
+            c. In case of regular function if you are not using strict mode
+            <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/bts-5.png" alt="" />
+          </div>
+          <p>
+            <span class="imp"
+              >NEVER USE ARROW FUNCTIONS TO DEFINE OBJECT METHODS</span
+            >
+          </p>
+          <h2>ARROW FUNCTIONS VS NORMAL FUNCTIONS</h2>
+          <div class="image-container">
+            <img src="images/bts-9.png" alt="" />
+          </div>
+          <h2>PRIMITIVES VS REFERENCE TYPES</h2>
+          <div class="image-container">
+            <img src="images/bts-6.png" alt="" />
+          </div>
+          <p>
+            Primitive types are stored in the call stack. Reference types are
+            stored in the memory heap.
+
+            <br /><br />when we declare a variable as an object, an identifier
+            is created, which points to a piece of memory in the call stack,
+            which in turn points to a piece of memory in the memory heap. And
+            that is where the object is actually stored. And it works this way
+            because objects might be too large to be stored in the stack.
+            Instead they are stored in the heap, which is like an almost
+            unlimited memory pool. And the stack just keeps a reference to where
+            the object is actually stored in the heap so that it can find it
+            whenever necessary. NOTE - piece of memory = memory address
+
+            <br /><br /><span class="imp">Check out the image below.</span>
+          </p>
+          <div class="image-container">
+            <img src="images/Primitive Vs Reference types.png" alt="" />
+          </div>
+          <h2>SOMETHING COOL</h2>
+          <div class="image-container">
+            <img src="images/bts-7.png" alt="" />
+          </div>
+        </div>
+        <!-- /bts-content -->
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../js/app.js"></script>
+  </body>
+</html>

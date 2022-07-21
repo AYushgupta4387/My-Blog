@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/fdfca29961.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE STYLE -->
+    <style>
+      .section-btn-5 {
+        background-color: #222831;
+      }
+
+      .section-btn-1,
+      .section-btn-3,
+      .section-btn-4,
+      .section-btn-2,
+      .section-btn-6,
+      .section-btn-7 {
+        background-color: #393e46;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar side-bar-invisible">
+      <button class="sb-bars">
+        <i class="sb-bars__icon fas fa-bars"></i>
+      </button>
+      <div class="sidebar-links-container">
+        <a
+          href="./fundamentals-js.html"
+          class="sidebar-link section-btn-1 fund-btn"
+          >Fundamentals</a
+        >
+        <a href="./Behind-the-scenes.html" class="sidebar-link section-btn-2"
+          >Behind The Scenes</a
+        >
+        <a href="./DS-and-operators.html" class="sidebar-link section-btn-3"
+          >Data Structures and Operators</a
+        >
+        <a href="./functions.html" class="sidebar-link section-btn-4"
+          >Functions</a
+        >
+        <a href="./arrays.html" class="sidebar-link section-btn-5">Arrays</a>
+        <a href="./oop.html" class="sidebar-link section-btn-6"
+          >Object Oriented Programming</a
+        >
+        <a href="./async-js.html" class="sidebar-link section-btn-7"
+          >Asynchronous JavaScript</a
+        >
+      </div>
+    </div>
+    <!-- MAIN -->
+    <div class="main">
+      <!-- NAV -->
+      <div class="nav">
+        <div class="nav-link-container">
+          <a href="#" class="nav-link cpp">C++</a>
+        </div>
+        <div class="nav-link-container nav-link-container-selected">
+          <a href="#" class="nav-link js">JavaScript</a>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="content-section arrays-content section-5">
+          <h2>SLICE METHOD</h2>
+          <p>
+            Slices the array into different parts according to input parameters.
+            <br />
+            Returns a new array. <br />
+            Excludes the ending element. <br />
+            <span class="imp">SYNTAX</span> - arrayName.slice(startingElement,
+            endingElement);
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-1.png" alt="" />
+          </div>
+          <h2>SPLICE METHOD</h2>
+          <p>
+            Same as slice() <br />
+            This mutates the original array and removes the elements that are
+            mentioned in splice method. <br />
+            Returns the removed elements. <br />
+            Here, the second argument defines the number of elements to be
+            removed (deleteCount). <br />
+            <span class="imp">SYNTAX</span> - arrayName.splice(startingElement,
+            deleteCount);
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-2.png" alt="" />
+          </div>
+          <h2>REVERSE METHOD</h2>
+          <p>
+            Reverses the array. <br />
+            Mutates the original array. <br />
+            Returns the reversed array.
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-3.png" alt="" />
+          </div>
+          <h2>CONCAT METHOD</h2>
+          <p>
+            Joins 2 arrays. <br />
+            Does not mutate the original array.
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-4.png" alt="" />
+          </div>
+          <h2>JOIN METHOD</h2>
+          <p>
+            Returns a new string of all the elements joined together by a
+            defined parameter. <br />
+            Does not mutate the original array.
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-5.png" alt="" />
+          </div>
+          <h2>FOR OF LOOP</h2>
+          <div class="image-container">
+            <img src="images/arrays-6.png" alt="" />
+          </div>
+          <h2>FOR EACH LOOP</h2>
+          <p>
+            The forEach() method calls a function (a callback function) once for
+            each array element. <br />
+            Break and continue do not work in forEach loop. <br />
+            <span class="imp">SYNTAX</span> - arrayName.forEach(
+            function(element, index, the whole array) {})
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-7.png" alt="" />
+          </div>
+          <h2>MAP METHOD</h2>
+          <p>
+            Map returns a new array containing the results of, applied
+            operations on all original array elements. <br />
+
+            Does not change the original array. <br />
+
+            We can also just use the element parameter. <br />
+
+            <span class="imp">SYNTAX</span> - array.map( function (element,
+            index, the whole array){} )
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-8.png" alt="" />
+          </div>
+          <h2>FILTER METHOD</h2>
+          <p>
+            Filter returns a new array containing the array elements that pass a
+            specified test condition. <br />
+
+            <span class="imp">SYNTAX</span> - array.filter(function (element,
+            index of the current element, the whole array))
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-9.png" alt="" />
+          </div>
+          <h2>REDUCE METHOD</h2>
+          <p>
+            Reduce boils ("reduces") all array elements down to one single value
+            and returns that value. <br />
+            accumulator -> SNOWBALL -> It is the value that is RETURNED in the
+            last iteration. <br />
+            <span class="imp">SYNTAX</span> - array.reduce(function
+            (accumulator, current element, index of current element, whole
+            array) {}, initial value of the accumulator)
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-10.png" alt="" />
+          </div>
+          <p>Another example -</p>
+          <div class="image-container">
+            <img src="images/arrays-11.png" alt="" />
+          </div>
+          <h2>CHAINING DIFFERENT METHODS</h2>
+          <div class="image-container">
+            <img src="images/arrays-12.png" alt="" />
+          </div>
+          <h2>FILTER METHOD</h2>
+          <p>
+            This returns the first element of the array that satisfies the
+            specified condition. <br />
+
+            Diff b/w filter and find is that filter returns an array of all the
+            elements that satisfies the given condition, while find returns just
+            the first element. <br />
+            Returns undefined if no such property is found. <br />
+
+            <span class="imp">SYNTAX</span> - array.find(function (current
+            element, index of current element, whole array) {})
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-13.png" alt="" />
+          </div>
+          <p>
+            Find method is really useful with arrays of objects as we can find
+            an object (array element) with its property value. EXAMPLE -
+          </p>
+          <div class="image-container">
+            <img src="images/arrays-14.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

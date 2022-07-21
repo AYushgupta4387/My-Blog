@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/fdfca29961.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE STYLE -->
+    <style>
+      .section-btn-3 {
+        background-color: #222831;
+      }
+
+      .section-btn-1,
+      .section-btn-2,
+      .section-btn-4,
+      .section-btn-5,
+      .section-btn-6,
+      .section-btn-7 {
+        background-color: #393e46;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar side-bar-invisible">
+      <button class="sb-bars">
+        <i class="sb-bars__icon fas fa-bars"></i>
+      </button>
+      <div class="sidebar-links-container">
+        <a
+          href="./fundamentals-js.html"
+          class="sidebar-link section-btn-1 fund-btn"
+          >Fundamentals</a
+        >
+        <a href="./Behind-the-scenes.html" class="sidebar-link section-btn-2"
+          >Behind The Scenes</a
+        >
+        <a href="./DS-and-operators.html" class="sidebar-link section-btn-3"
+          >Data Structures and Operators</a
+        >
+        <a href="./functions.html" class="sidebar-link section-btn-4"
+          >Functions</a
+        >
+        <a href="./arrays.html" class="sidebar-link section-btn-5">Arrays</a>
+        <a href="./oop.html" class="sidebar-link section-btn-6"
+          >Object Oriented Programming</a
+        >
+        <a href="./async-js.html" class="sidebar-link section-btn-7"
+          >Asynchronous JavaScript</a
+        >
+      </div>
+    </div>
+    <!-- MAIN -->
+    <div class="main">
+      <!-- NAV -->
+      <div class="nav">
+        <div class="nav-link-container">
+          <a href="#" class="nav-link cpp">C++</a>
+        </div>
+        <div class="nav-link-container nav-link-container-selected">
+          <a href="#" class="nav-link js">JavaScript</a>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <!-- DATA STRUCTURES AND OPERATORS -->
+        <div class="content-section ds-operators-content section-3">
+          <div class="image-container">
+            <img src="images/dso.png" alt="" />
+          </div>
+
+          <h2>DESTRUCTING ARRAYS</h2>
+          <p>
+            It means to covert the elements of arrays into individual variables.
+            <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-1.png" alt="" />
+          </div>
+          <p>
+            To switch the values of 2 variables, we can again use destructing
+            arrays. This is called mutating variables. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-2.png" alt="" />
+          </div>
+          <p>Nested destructing - Example</p>
+          <div class="image-container">
+            <img src="images/dso-3.png" alt="" />
+          </div>
+          <p>We can also set the variables to default value. Example -</p>
+          <div class="image-container">
+            <img src="images/dso-4.png" alt="" />
+          </div>
+          <h2>DESTRUCTING OBJECTS</h2>
+          <p>Same as destructing arrays. <br />Exaple -</p>
+          <div class="image-container">
+            <img src="images/dso-5.png" alt="" />
+          </div>
+          <p>
+            NOTE - Here property name should be same as property name in the
+            object from which we are copying values.
+          </p>
+          <p>Nested objects destructing -</p>
+          <div class="image-container">
+            <img src="images/dso-6.png" alt="" />
+          </div>
+          <h2>THE SPREAD OPERATOR "..."</h2>
+          <p>It spreads the values of an array separately. Example -</p>
+          <div class="image-container">
+            <img src="images/dso-7.png" alt="" />
+          </div>
+          <p>To copy an array -</p>
+          <div class="image-container">
+            <img src="images/dso-8.png" alt="" />
+          </div>
+          <p>To concat two arrays -</p>
+          <div class="image-container">
+            <img src="images/dso-9.png" alt="" />
+          </div>
+          <p>
+            Example of how to use spread operator to give multiple inputs to a
+            function.
+          </p>
+          <div class="image-container">
+            <img src="images/dso-10.png" alt="" />
+          </div>
+          <p>Using spread operator to make a new object -</p>
+          <div class="image-container">
+            <img src="images/dso-11.png" alt="" />
+          </div>
+          <h2>THE REST OPERATOR "..."</h2>
+          <p>
+            It has the same syntax as the spread operator, but it does the
+            opposite of it. <br />It packs the separate variables into an array.
+            Examples -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-12.png" alt="" />
+          </div>
+          <p>
+            Using rest operator to create objects - Same as arrays, it creates
+            an object instead of an array. Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-13.png" alt="" />
+          </div>
+          <p>
+            Using rest operator in functions - Here we pass numbers separated by
+            a comma, even though the function expects only a single input. The
+            rest operator here, converts the separate numbers into an array.
+            This method is more preferred because now we can input separate
+            numbers as well as arrays.
+          </p>
+          <div class="image-container">
+            <img src="images/dso-14.png" alt="" />
+          </div>
+          <h2>SHORT CIRCUITING (&& AND ||)</h2>
+          <p>
+            <span class="imp">|| operator -</span><br /><br />It is the same as
+            logical OR operator. It will check the first value, if that's true,
+            it will return that value, if it's false, it will move to the next
+            value. It will continue doing this till a truthy value is reached.
+            If all the values are falsey, it will return the last value.
+
+            <br /><br />This returns the first truthy value or if all the values
+            are falsey, it will return the last falsey value.
+
+            <br />NOTE - Logical operators Use ANY data type, return ANY data
+            type, follows short-circuiting.
+
+            <br /><br />EXAMPLES -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-15.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Nullish Coalescing operator ?? -</span> <br />It
+            is same as || operator, only diff is that, this operator short
+            circuits based on Nullish values instead of falsey values.
+
+            <br /><span class="imp"
+              >NOTE - Nullish values are null and undefined only (not 0 or
+              "").</span
+            >
+
+            <br /><br />EXAMPLE -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-16.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">&& operator -</span> <br />This returns the first
+            falsey value or if all the values are truthy, it will return the
+            last truthy value.
+
+            <br /><br />EXAMPLES -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-17.png" alt="" />
+          </div>
+          <h2>THE FOR OF LOOP</h2>
+          <p>Examples -</p>
+          <div class="image-container">
+            <img src="images/dso-18.png" alt="" />
+          </div>
+          <h2>OPTIONAL CHAINING (FEATURE OF ES2020)</h2>
+          <p>
+            It is used for chaining nested objects. It checks wether the
+            property written before "?" exists or not. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-19.png" alt="" />
+          </div>
+          <p>Another Example -</p>
+          <div class="image-container">
+            <img src="images/dso-20.png" alt="" />
+          </div>
+          <p>
+            Optional Chaining also works for methods. Here it comes b/w the
+            method name and parameters. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-21.png" alt="" />
+          </div>
+          <p>
+            Optional chaining also works for arrays. It basically checks if an
+            array is empty.
+          </p>
+          <p>Example -</p>
+          <div class="image-container">
+            <img src="images/dso-22.png" alt="" />
+          </div>
+          <h2>
+            LOOPING OVER OBJECTS (OBJECT.KEYS(), OBEJCT.VALUES(),
+            OBJECT.ENTRIES())
+          </h2>
+          <p>
+            We can even loop over objects. <br /><span class="imp"
+              >Property NAMES</span
+            >
+            - This will create an array of property names.<br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-23.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Property VALUES</span> - This will create an array
+            of property values.<br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-24.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Entire object</span> - This will create an array,
+            with each element being a key-value pair. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-25.png" alt="" />
+          </div>
+          <h2>SETS</h2>
+          <p>
+            It is another data structure that only stores unique values.
+            <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-26.png" alt="" />
+          </div>
+          <p>They can be used for all iterables. <br />Example -</p>
+          <div class="image-container">
+            <img src="images/dso-27.png" alt="" />
+          </div>
+          <p>There length can be calculated using the "size" method.</p>
+          <p>
+            It can also be checked if the set includes some element using "has"
+            method. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-28.png" alt="" />
+          </div>
+          <p>
+            We can add elements to sets using "add" method, and we can remove
+            elements using "delete" method.
+
+            <br />We can convert a set to an array -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-29.png" alt="" />
+          </div>
+          <h2>MAPS</h2>
+          <p>
+            Maps are also a data structure that works similar to objects apart
+            from the fact that keys can be anything in maps whereas in objects,
+            they can only be strings. <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-30.png" alt="" />
+          </div>
+          <p>To add an entry to map, we use set() property. <br />Example -</p>
+          <div class="image-container">
+            <img src="images/dso-31.png" alt="" />
+          </div>
+          <p>We can even chain the set() properties. <br />Example -</p>
+          <div class="image-container">
+            <img src="images/dso-32.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/dso-33.png" alt="" />
+          </div>
+          <p>
+            We can delete entries using delete() property. It also has has() and
+            size() method.
+          </p>
+          <h2>STRINGS</h2>
+          <p>Examples -</p>
+          <div class="image-container">
+            <img src="images/dso-34.png" alt="" />
+          </div>
+          <p><span class="imp">length method</span></p>
+          <div class="image-container">
+            <img src="images/dso-35.png" alt="" />
+          </div>
+          <p><span class="imp">indexOf() method</span></p>
+          <div class="image-container">
+            <img src="images/dso-36.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">lastIndexOf() method -</span> This gives the index
+            of last occurence
+          </p>
+          <div class="image-container">
+            <img src="images/dso-37.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">slice() method - </span>
+            <br />slice(startingIndex, endingIndex) <br />If we only give
+            startingIndex, it will extract the whole string starting from
+            startingIndex. <br />startingIndex is included and endingIndex is
+            excluded. <br />Length of new string = endingIndex - startingIndex
+            <br />Examples -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-38.png" alt="" />
+          </div>
+          <p>
+            We can also use negative index, which starts from end. <br />NOTE -
+            Last character has the index = -1 <br />Examples -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-39.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Changing case -</span> <br />.toLowerCase()
+            <br />.toUpperCase() <br />Example - Convert "AyuSH" to "AYush"
+          </p>
+          <div class="image-container">
+            <img src="images/dso-40.png" alt="" />
+          </div>
+          <p><span class="imp">Removing white-spaces -</span> <br />.trim()</p>
+          <br />
+          <br />
+          <p>
+            <span class="imp">Replacing strings -</span> <br />.replace("part of
+            string to remove", "new string to be added their") <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-41.png" alt="" />
+          </div>
+          <p>
+            We can also use .replaceAll().<br /><br />
+
+            <br /><span class="imp">Booleans -</span> These methods returns
+            booleans. <br />.includes() <br />.startsWith() <br />.endsWith()
+            <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-42.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Split and join</span><br />split() is to split a
+            big string into array elements on the basis of a separator and
+            vice-versa for join(). <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-43.png" alt="" />
+          </div>
+          <p>
+            Example - We want to capitalize the name passsed into the function.
+          </p>
+          <div class="image-container">
+            <img src="images/dso-44.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">Padding -</span> This method adds a specific
+            character to the string. <br />"string".padStart(final length of the
+            string, Character to be added) <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-45.png" alt="" />
+          </div>
+          <p>
+            "string".padEnd(final length of the string, Character to be added)
+            <br />Example -
+          </p>
+          <div class="image-container">
+            <img src="images/dso-46.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
