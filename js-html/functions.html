@@ -93,39 +93,28 @@
           <div class="image-container">
             <img src="images/func-1.png" alt="" />
           </div>
-          <h2>IMPORTANT</h2>
+          <h2>PASSING AS ARGUMENTS (PRIMITIVES VS NON-PRIMITIVE DATA-TYPES)</h2>
 
           <p>
-            When we pass a primitive type as an argument on a function, the
-            function makes a copy of the ORIGINAL VALUE, and works with it.
-
+            When we pass a primitive data-type as an argument to a function, the
+            function makes a COPY of the original value, and works with it.
             <br />
-            On the other hand, when we pass an object as an argument on a
-            function, the function makes a copy of the REFERENCE that points to
-            the place of the memory where the object is stored. This copy is a
-            value itself, is not a reference. Because all of this, the original
-            object can be modified from inside of a function.
-
-            <br /><br />
-            JavaScript is diff - <br />
-            In programming languages, Arguments can be passed by value, or
-            passed by reference
-
-            <br />
-            JS has not passing by reference, only passing by value...
-
-            <br />
-            So, when we pass primitive values, the function works with a value,
-            which is a copy of the original value
-
-            <br />
-            When we pass a reference type, the function works with a value that
-            address to the spot where the original object is in the memory
-            (still is not a reference)
-
+            On the other hand, when we pass a non-primitive data-type as an
+            argument to a function, the function makes a copy of the REFERENCE
+            that points to the place in the memory where the object is stored.
+            This copy points to the value itself. Because of all this, the
+            original object can be modified from inside of a function.
             <br />
             We should never change the values of non-primitives like objects
             inside a function, because that can have unforseeable circumstances.
+
+            <br /><br />
+            Also, JavaScript is again different as, <br />
+            In programming languages, Arguments can be passed by value, or
+            passed by reference.<br />
+            JS does not have passing by reference, only passing by value... <br />
+            If pass by reference was there in JS, then value of NON-PRIMITIVE
+            data-types could also be changed from inside the function.
           </p>
           <h2>FIRST-CLASS FUNCTIONS -</h2>
           <p>

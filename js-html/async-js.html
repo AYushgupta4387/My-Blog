@@ -34,7 +34,8 @@
       .section-btn-4,
       .section-btn-5,
       .section-btn-6,
-      .section-btn-2 {
+      .section-btn-2,
+      .section-btn-8 {
         background-color: #393e46;
       }
     </style>
@@ -112,6 +113,40 @@
           </p>
           <div class="image-container">
             <img src="images/async-1.png" alt="" />
+          </div>
+          <h2>CALLBACK HELL</h2>
+          <p>Callback functions inside callback functions.</p>
+          <div class="image-container">
+            <img src="images/async-2.png" alt="" />
+          </div>
+          <h2>PROMISES AND FETCH API</h2>
+          <p>
+            It is an object that is used as a placeholder for the future result
+            of an asynchronous operation. A promise is like a lottery ticket.
+          </p>
+          <div class="image-container">
+            <img src="images/promises.png" alt="" />
+          </div>
+          <p>
+            const request = fetch("https://restcountries.com/v2/name/usa"); //
+            Here, on console logging request, what we get is the promise. <br />
+            <br />
+            In the beginning, we say that a promise is pending. This is before
+            any value resulting from the asynchronous task is available. Now,
+            during this time, the asynchronous task is still doing its work in
+            the background. When the asynchronous task finally finishes, we say
+            that the promise is settled and there are two different types of
+            settled promises and that's fulfilled promises and rejected
+            promises. A fulfilled promise is a promise that has successfully
+            resulted in a value just as we expect it and it's now available to
+            being used. On the other hand, a rejected promise means that there
+            has been an error during the asynchronous task. <br />
+            A promise is either fulfilled or rejected, it is impossible to
+            change it's state. <br />
+            <br />Life-cycle of a promise -
+          </p>
+          <div class="image-container">
+            <img src="images/promise-life-cycle.png" alt="" />
           </div>
         </div>
       </div>
