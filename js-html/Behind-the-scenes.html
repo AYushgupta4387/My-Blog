@@ -130,13 +130,6 @@
             <br />3. <span class="imp">Just-in-time compilation</span> - Entire
             code is converted to machine code at once and then is executed
             immediately.
-
-            <br /><br /><span class="imp"
-              >JavaScript Engine = Call Stack + Memory Heap</span
-            >
-
-            <br /><span class="imp">Top level code</span> - Code that is NOT
-            inside any function.
           </p>
           <div class="image-container">
             <img
@@ -144,6 +137,14 @@
               alt=""
             />
           </div>
+          <p>
+            <span class="imp"
+              >JavaScript Engine = Call Stack + Memory Heap</span
+            >
+
+            <br /><span class="imp">Top level code</span> - Code in the global
+            scope that is NOT inside any function.
+          </p>
           <h2>EXECUTION CONTEXT</h2>
           <p>
             Environment in which a piece of JS code is executed. It stores all
@@ -151,12 +152,20 @@
             <span class="imp"
               >Execution context is the pizza box where we eat the pizza.</span
             >
-            <br />It contains - <br />1. Variable Environment It contains -
-            <br />a) let, const and var declarations <br />b) Function
-            declarations <br />c) argument objects <br />2. Scope Chain <br />3.
-            this keyword <br />NOTE - Arrow functions do not contain argument
-            object and this keyword.
+            <br />It contains - <br /><span class="imp"
+              >1. Variable Environment</span
+            >
+            It contains - <br />a) let, const and var declarations <br />b)
+            Function declarations <br />c) argument objects <br /><span
+              class="imp"
+              >2. Scope Chain</span
+            >
+            <br /><span class="imp">3. this keyword </span><br />NOTE - Arrow
+            functions do not contain argument object and this keyword.
           </p>
+          <div class="image-container">
+            <img src="images/execution-context.png" alt="" />
+          </div>
           <h2>HOW EXECUTION OF JS CODE HAPPENS</h2>
           <p>
             1. Creation of GLOBAL EXECUTION CONTEXT for top level code. <br />2.
@@ -178,14 +187,23 @@
             executed first, unless it has a function call inside it to another
             function.
           </p>
+          <div class="image-container">
+            <img src="images/execution-context-2.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/call-stack.png" alt="" />
+          </div>
           <h2>SCOPING/SCOPE CHAIN</h2>
           <p>
-            Scope - Environment in which a certain variable is declared. There
+            Scope - Environment in which a certain variable is available. There
             are <br />1. Global scope <br />2. Function/local scope <br />3.
             Block scope - Variables are accessible only inside block (if block,
             for loop block, etc). This only applies to let and const variables.
             <br />
-            let/const are block-scope and var is function-scope.
+            <br />
+            <span class="imp"
+              >let and const are block-scoped and var is function-scoped.</span
+            >
 
             <br /><br />
             <span class="imp">NOTE</span> - In strict mode, functions are also
@@ -195,12 +213,10 @@
             <br /><br /><span class="imp">Lexical Scoping</span> - Scoping is
             controlled by the placement of functions and blocks in the code.
 
-            <br />JS looks for variables inside the current scope and then
+            <br />JS looks for variables first inside the current scope and then
             outside the current scope. If a variable with the same name exists
             inside the current scope as well as outside it, then the one in the
-            current scope will be used.
-
-            <br /><span class="imp">Check out the image below.</span>
+            current scope will be used. <br />
           </p>
 
           <div class="image-container">
@@ -220,11 +236,14 @@
             and for each variable, a new property is created in the VARIABLE
             ENVIRONMENT OBJECT.
 
-            <br />Only function declarations and variables declared with var are
-            hoisted. Variables declared with var have an initial value of
-            "undefined". <br /><span class="imp"
-              >Check out the image below.</span
-            >
+            <br />
+            <span class="imp">
+              Only function declarations and variables declared with var are
+              hoisted.
+            </span>
+            <br />
+            Variables declared with var have an initial value of "undefined".
+            <br />
           </p>
           <div class="image-container">
             <img src="images/Hoisting.png" alt="" />
