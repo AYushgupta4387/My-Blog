@@ -70,10 +70,22 @@ body {
   padding: 0 2vh;
 }
 
+@media only screen and (max-width: 800px) {
+  .main-heading {
+    margin-top: 2vh;
+  }
+}
+
 .home-page-text {
   margin-top: 5vh;
   font-size: 2.4vh;
   padding: 1vh 2vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .home-page-text {
+    margin-top: 2vh;
+  }
 }
 
 .content-container-1 {
@@ -116,6 +128,7 @@ body {
 @media only screen and (max-width: 800px) {
   .content-box {
     height: 12vh;
+    width: 20vh;
   }
 }
 
