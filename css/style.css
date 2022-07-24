@@ -50,6 +50,7 @@ p {
 
 .imp {
   color: var(--primary-color);
+  font-weight: bold;
 }
 
 .hidden {

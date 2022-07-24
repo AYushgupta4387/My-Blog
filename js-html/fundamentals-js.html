@@ -74,16 +74,29 @@
           <h2>LET, CONST and VAR</h2>
           <p>
             let and const were introduced in ES6. We use let when we want to
-            allow a variable to change its value in the future, <br />we use
-            const when we don't want the same (immutable variable). Const
-            variables cannot be initialized undeclared.
-            <span class="imp">By default, we should use const</span>.
+            allow a variable to change its value in the future, we use const
+            when we don't want the same (immutable variable). <br />
+            Const variables cannot be initialized undeclared. <br />
+            <span class="imp">By default, we should use const</span>. <br />
+            <br />
+            A variable declared with var in the global scope is added as a
+            property to the window object. The same is NOT true with const or
+            let.
           </p>
+          <div class="image-container">
+            <img
+              src="images/fundamentals-13.png"
+              alt=""
+              class="fundamentals-image-1"
+            />
+          </div>
           <h2>STRINGS AND TEMPLATE LITERALS</h2>
           <p>
             We can use backticks `` to declare strings anywhere. <br />Using ``,
             creates a newline when we start writing on a new line. <br />We can
-            do any JS inside the curly braces.
+            do any JS inside the curly braces using
+            <span class="imp"><b>${}</b></span
+            >.
           </p>
           <div class="image-container">
             <img
@@ -95,8 +108,12 @@
           <h2>TYPE CONVERSION AND COERCION</h2>
           <p>
             Type conversion - When we manually convert a data type. <br />Type
-            coercion - When JavaScript does it automatically for us. To convert
-            a string to a number, use Number() function. Example -
+            coercion - When JavaScript does it automatically for us. <br />
+            <br />
+            To convert any string/number to boolean, we can use Boolean()
+            function. <br />
+            To convert a number to a string, use String() function. <br />
+            To convert a string to a number, use Number() function. Example -
           </p>
           <div class="image-container">
             <img
@@ -105,10 +122,7 @@
               class="fundamentals-image-2"
             />
           </div>
-          <p>
-            To convert a number to a string, use String() function. Examples of
-            type coercion -
-          </p>
+          <p>Examples of type coercion -</p>
           <div class="image-container">
             <img
               src="images/fundamentals-3.png"
@@ -137,12 +151,13 @@
           </p>
           <h2>TRUTHY AND FALSY VALUES</h2>
           <p>
-            To convert any string/number to boolean, we can use Boolean()
-            function. <br />Falsy values - These are the values that when
-            converted to boolean outputs false. They are <br />1) 0 <br />2)
-            Empty string ('') <br />3) undefined <br />4) null <br />5) NaN
-            <br />Truthy values - Apart from the above values, all the other
-            values output truth when converted to boolean.
+            <span class="imp">Falsy values</span> - These are the values that
+            when converted to boolean outputs false. They are <br />1) 0
+            <br />2) Empty string ('') <br />3) undefined <br />4) null <br />5)
+            NaN <br />
+            <br />
+            <span class="imp">Truthy values</span> - Apart from the above
+            values, all the other values output truth when converted to boolean.
           </p>
           <h2>USING STRICT MODE</h2>
           <p>
@@ -153,9 +168,12 @@
           </p>
           <h2>FUNCTION DECLARATIONS VS. EXPRESSIONS AND ARROW FUNCTIONS</h2>
           <p>
-            There are 3 ways to define a function, they are- <br />1) Function
-            declaration - In this way, we can first call a function and then
-            later define it in the code below. Example -
+            There are 3 ways to define a function, they are - <br /><span
+              class="imp"
+              >1) Function declaration</span
+            >
+            - In this way, we can first call a function and then later define it
+            in the code below. Example -
           </p>
           <div class="image-container">
             <img
@@ -165,8 +183,9 @@
             />
           </div>
           <p>
-            2) Function expression - In this way, we CANNOT first call a
-            function and then later define it in the code below. Example -
+            <span class="imp">2) Function expression</span> - In this way, we
+            CANNOT first call a function and then later define it in the code
+            below. Example -
           </p>
           <div class="image-container">
             <img
@@ -176,9 +195,9 @@
             />
           </div>
           <p>
-            3) Arrow functions - This way is best for writing one line
-            functions. <br />Example 1 - This example code has no parenthesis
-            for parameter and no return word.
+            <span class="imp">3) Arrow functions</span> - This way is best for
+            writing one line functions. <br />Example 1 - This example code has
+            no parenthesis for parameter and no return word.
           </p>
           <div class="image-container">
             <img
@@ -197,20 +216,32 @@
           </div>
           <h2>BASIC ARRAY OPERATIONS (METHODS)</h2>
           <p>
-            1) arrayName.push(newArrayElement) - This method adds an element at
-            the end of the array. This method returns the new length of the
-            array. <br />2) arrayName.unshift(newArrayElement) - This method
-            adds an element at the start of the array. This method returns the
-            new length of the array. <br />3) arrayName.pop() - This method
-            removes an element from the end of the array. This method returns
-            the removed element of the array. <br />4) arrayName.shift() - This
-            method removes an element from the start of the array. This method
-            returns the removed element of the array. <br />5)
-            arrayName.indexOf(arrayElement) - This method returns the index of
-            the array element that we type in. It returns -1 if that element
-            does not exists in the array. <br />6)
-            arrayName.includes(arrayElement) - This method returns true or false
-            depending that element exists in the array or not.
+            <span class="imp">1) arrayName.push(newArrayElement)</span> - This
+            method adds an element at the end of the array. This method returns
+            the new length of the array. <br /><br /><span class="imp"
+              >2) arrayName.unshift(newArrayElement)</span
+            >
+            - This method adds an element at the start of the array. This method
+            returns the new length of the array. <br /><br /><span class="imp"
+              >3) arrayName.pop()</span
+            >
+            - This method removes an element from the end of the array. This
+            method returns the removed element of the array. <br /><br /><span
+              class="imp"
+              >4) arrayName.shift()</span
+            >
+            - This method removes an element from the start of the array. This
+            method returns the removed element of the array. <br /><br /><span
+              class="imp"
+              >5) arrayName.indexOf(arrayElement)</span
+            >
+            - This method returns the index of the array element that we type
+            in. It returns -1 if that element does not exists in the array.
+            <br />
+            <br />
+            <span class="imp">6) arrayName.includes(arrayElement)</span> - This
+            method returns true or false depending that element exists in the
+            array or not.
           </p>
           <h2>JS OBJECTS</h2>
           <p>
@@ -228,8 +259,9 @@
           </div>
           <p>
             We can even store functions in objects because function expressions
-            are just values. Object methods are just functions, that are defined
-            inside the object. Example -
+            are just values. <br />
+            Object methods are just functions, that are defined inside the
+            object. Example -
           </p>
           <div class="image-container">
             <img
