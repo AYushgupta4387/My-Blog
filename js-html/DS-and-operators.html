@@ -35,7 +35,8 @@
       .section-btn-5,
       .section-btn-6,
       .section-btn-7,
-      .section-btn-8 {
+      .section-btn-8,
+      .section-btn-9 {
         background-color: #393e46;
       }
     </style>
@@ -68,6 +69,9 @@
         <a href="./async-js.html" class="sidebar-link section-btn-7"
           >Asynchronous JavaScript</a
         >
+        <a href="./mordern-javascript.html" class="sidebar-link section-btn-8"
+          >Modern JavaScript</a
+        >
         <a href="./extra-reads.html" class="sidebar-link section-btn-8"
           >Extra Reads</a
         >
@@ -79,6 +83,10 @@
       <div class="content">
         <!-- DATA STRUCTURES AND OPERATORS -->
         <div class="content-section ds-operators-content section-3">
+          <div class="image-container">
+            <img src="images/dso-2-1.png" alt="" />
+          </div>
+
           <div class="image-container">
             <img src="images/dso.png" alt="" />
           </div>
@@ -143,6 +151,11 @@
           <div class="image-container">
             <img src="images/dso-11.png" alt="" />
           </div>
+          <p>
+            If the property with the same name already exists in the object that
+            we are spreading, then the property inside the "spreading" object
+            gets prioritized.
+          </p>
           <h2>THE REST OPERATOR "..."</h2>
           <p>
             It has the same syntax as the spread operator, but it does the
@@ -154,7 +167,7 @@
           </div>
           <p>
             Using rest operator to create objects - Same as arrays, it creates
-            an object instead of an array. Example -
+            an object since we are using curly braces. Example -
           </p>
           <div class="image-container">
             <img src="images/dso-13.png" alt="" />
@@ -174,7 +187,7 @@
             <span class="imp">|| operator -</span><br /><br />It is the same as
             logical OR operator. It will check the first value, if that's true,
             it will return that value, if it's false, it will move to the next
-            value. It will continue doing this till a truthy value is reached.
+            value. It will continue doing this until a truthy value is reached.
             If all the values are falsey, it will return the last value.
 
             <br /><br />This returns the first truthy value or if all the values
@@ -189,24 +202,25 @@
             <img src="images/dso-15.png" alt="" />
           </div>
           <p>
-            <span class="imp">Nullish Coalescing operator ?? -</span> <br />It
-            is same as || operator, only diff is that, this operator short
+            <span class="imp">Nullish Coalescing operator ?? -</span> <br />
+            <br />
+            It is same as || operator, only diff is that, this operator short
             circuits based on Nullish values instead of falsey values.
 
+            <br />
             <br /><span class="imp"
               >NOTE - Nullish values are null and undefined only (not 0 or
               "").</span
             >
-
             <br /><br />EXAMPLE -
           </p>
           <div class="image-container">
             <img src="images/dso-16.png" alt="" />
           </div>
           <p>
-            <span class="imp">&& operator -</span> <br />This returns the first
-            falsey value or if all the values are truthy, it will return the
-            last truthy value.
+            <span class="imp">&& operator -</span> <br /><br />This returns the
+            first falsey value or if all the values are truthy, it will return
+            the last truthy value.
 
             <br /><br />EXAMPLES -
           </p>

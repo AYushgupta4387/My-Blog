@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/fdfca29961.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE STYLE -->
+    <style>
+      .section-btn-9 {
+        background-color: #222831;
+      }
+
+      .section-btn-1,
+      .section-btn-3,
+      .section-btn-2,
+      .section-btn-5,
+      .section-btn-6,
+      .section-btn-7,
+      .section-btn-8,
+      .section-btn-4 {
+        background-color: #393e46;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar side-bar-invisible">
+      <button class="sb-bars">
+        <i class="sb-bars__icon fas fa-bars"></i>
+      </button>
+      <div class="sidebar-links-container">
+        <a
+          href="./fundamentals-js.html"
+          class="sidebar-link section-btn-1 fund-btn"
+          >Fundamentals</a
+        >
+        <a href="./Behind-the-scenes.html" class="sidebar-link section-btn-2"
+          >Behind The Scenes</a
+        >
+        <a href="./DS-and-operators.html" class="sidebar-link section-btn-3"
+          >Data Structures and Operators</a
+        >
+        <a href="./functions.html" class="sidebar-link section-btn-4"
+          >Functions</a
+        >
+        <a href="./arrays.html" class="sidebar-link section-btn-5">Arrays</a>
+        <a href="./oop.html" class="sidebar-link section-btn-6"
+          >Object Oriented Programming</a
+        >
+        <a href="./async-js.html" class="sidebar-link section-btn-7"
+          >Asynchronous JavaScript</a
+        >
+        <a href="./mordern-javascript.html" class="sidebar-link section-btn-8"
+          >Modern JavaScript</a
+        >
+        <a href="./extra-reads.html" class="sidebar-link section-btn-8"
+          >Extra Reads</a
+        >
+      </div>
+    </div>
+    <!-- MAIN -->
+    <div class="main">
+      <!-- CONTENT -->
+      <div class="content">
+        <!-- MORDERN JAVASCRIPT -->
+        <div class="content-section mordern-js-content section-8">
+          <h2>MODULES</h2>
+          <div class="image-container">
+            <img src="images/modules.png" alt="" />
+          </div>
+          <p>
+            We can export values out of a module, simple values or even entire
+            functions. <br />
+            Whatever we export from a module is called the public API. <br />
+            This public API is actually consumed by importing values into a
+            module. <br />
+            These other modules from which we import are then called
+            dependencies of the importing module.
+          </p>
+          <div class="image-container">
+            <img src="images/modules-2.png" alt="" />
+          </div>
+          <p>
+            The differences between old school scripts and modern ES6 modules is
+            that, in MODULES, all top level variables are scoped to the module.
+            So variables are private to the module by default and the only way
+            an outside module can access a value that's inside of a module is by
+            exporting that value. So if we don't export the variables from the
+            module, then no outside modules can use those variable. <br />
+            In SCRIPTS, on the other hand, all top level variables are always
+            global and this can lead to problems like global namespace
+            pollution, where multiple scripts try to declare variables with the
+            same name and then these variables collide. <br />
+            <br />
+            ES6 MODULES are always executed in strict mode while SCRIPTS on the
+            other hand are executed in sloppy mode by default. So with modules,
+            there is no more need to manually declare strict mode. <br />
+            <br />
+            In MODULES the "this" keyword is always undefined at the top level
+            while in SCRIPTS it points at the window object. <br />
+            <br />
+            With MODULES, we can export and import values between them using
+            this ES6 import and experts syntax. In regular SCRIPTS, importing
+            and exporting values is just completely impossible.
+          </p>
+          <div class="image-container">
+            <img src="images/modules-3.png" alt="" />
+          </div>
+          <p>
+            <span class="imp">
+              Imports and exports can only happen at the top level, i.e.,
+              outside of any function or any if block.</span
+            >
+            <br />
+            <br />
+            All Imports are Hoisted. <br />
+            <br />
+            The code of the importing modules gets executed first, then the code
+            of the actual module, that we are in, gets executed. <br />
+            <br />
+            In order to link a module to an HTML file, we need to use the script
+            tag with the type attribute set to module, instead of just a plain
+            script tag.
+          </p>
+          <h2>HOW MODULES ARE IMPORTED</h2>
+          <p>
+            Whenever a piece of code is executed, the first step is to parse
+            that code. <br />
+            Parsing basically means to just read the code, without executing it.
+            <br />
+            In this moment, the imports are hoisted. <br />
+            <br />
+            The connection imported and exported value is a live connection,
+            what that means is exported values are not copied to imports.
+            Instead, the imported value is basically just a reference to the
+            exported values like a pointer. So when the value changes in the
+            exporting module, then the same value also changes in the importing
+            module.
+          </p>
+          <div class="image-container">
+            <img src="images/how-modules-are-imported.png" alt="" />
+          </div>
+          <p>
+            In ES6 modules, there are two types of exports, Named Exports and
+            Default Exports. <br />
+            <br />
+            In NAMED EXPORT, <br />
+            All we have to do is to put export in front of anything, that we
+            want to export. <br />
+            While importing, we have to use the exact same name of the variable
+            that we are importing and put it inside of curly braces. <br />
+            We can export multiple variables from one module. <br />
+            We can also change the name of variables while importing/exporting
+            them using the "as" keyword. <br />
+            <br />
+            Example of NAMED EXPORT
+          </p>
+          <div class="image-container">
+            <img src="images/modern-js-1.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/modern-js-2.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/modern-js-3.png" alt="" />
+          </div>
+          <p>
+            In DEFAULT EXPORT, <br />
+            usually, we use, only when we want to export one thing per module,
+            that's the reason why they are called default. <br />
+            We can mix default and named imports, but we should never do it.<br />
+            We just export the function or variable we want to, without naming
+            it, from the exporting module and call it whatever we want in the
+            importing module.
+            <br />
+            <br />
+            Example of DEFAULT EXPORT
+          </p>
+          <div class="image-container">
+            <img src="images/modern-js-4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../js/app.js"></script>
+  </body>
+</html>

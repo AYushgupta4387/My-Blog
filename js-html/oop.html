@@ -35,7 +35,8 @@
       .section-btn-5,
       .section-btn-2,
       .section-btn-7,
-      .section-btn-8 {
+      .section-btn-8,
+      .section-btn-9 {
         background-color: #393e46;
       }
     </style>
@@ -67,6 +68,9 @@
         >
         <a href="./async-js.html" class="sidebar-link section-btn-7"
           >Asynchronous JavaScript</a
+        >
+        <a href="./mordern-javascript.html" class="sidebar-link section-btn-8"
+          >Modern JavaScript</a
         >
         <a href="./extra-reads.html" class="sidebar-link section-btn-8"
           >Extra Reads</a
@@ -108,14 +112,13 @@
 
             The prototype object contains methods and properties that all the
             objects that are linked to that prototype can access and use. This
-            behavior is usually called prototypal inheritance. <br />
-
-            This inheritance is different from the inheritance principle, this
-            is basically an instance inheriting from a class. <br />
-
+            behavior is usually called
+            <span class="imp"> prototypal inheritance.</span> <br />
+            <br />
             We can also say that objects delegate behavior to the linked
-            prototype object. Behaviour == Methods. <br />
-
+            prototype object. <span class="imp"> Behaviour == Methods.</span>
+            <br />
+            <br />
             Prototypal inheritance is also called delegation because
             technically, objects delegate their behavior to the prototype.
             <br />
@@ -261,6 +264,53 @@
           </div>
           <div class="image-container">
             <img src="images/oop-11.png" alt="" />
+          </div>
+          <h2>INHERITANCE BETWEEN CLASSES USING ES6 CLASSES</h2>
+          <p>
+            We can set the prototype of an object by using the "extends"
+            keyword. Also, note the use of super() method in the example below.
+          </p>
+          <div class="image-container">
+            <img src="images/oop-12.png" alt="" />
+          </div>
+          <h2>INHERITANCE BETWEEN CLASSES USING ES6 CLASSES</h2>
+          <div class="image-container">
+            <img src="images/inheritance-btw-object-create.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/oop-13.png" alt="" />
+          </div>
+          <h2>ENCAPSULATION</h2>
+          <p>
+            Encapsulation means to keep some properties and methods private
+            inside the class so that they are not accessible from outside of the
+            class. <br />
+            The rest of the methods are exposed as a public interface, which we
+            can also call API. <br />
+            <br />
+            There are 2 reasons why we need encapsulation and data privacy.
+            <br />
+            First, is to prevent code from outside of a class to accidentally
+            manipulate our data inside the class. <br />
+            The second reason is that when we expose only a small interface so a
+            small API consisting only of a few public methods then we can change
+            all the other internal methods with more confidence. Because in this
+            case, we can be sure that external code does not rely on these
+            private methods. Therefore our code will not break when we do
+            internal changes. <br />
+            <br />
+            <span class="imp"
+              >A property with an "_" in front of it is private by
+              convention.</span
+            >
+            <br />
+            <br />
+            Fields are basically properties that will be in all the instances.
+            They will get added directly to the instances and not in their
+            prototypes.
+          </p>
+          <div class="image-container">
+            <img src="images/oop-14.png" alt="" />
           </div>
         </div>
       </div>

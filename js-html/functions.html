@@ -35,7 +35,8 @@
       .section-btn-5,
       .section-btn-6,
       .section-btn-7,
-      .section-btn-8 {
+      .section-btn-8,
+      .section-btn-9 {
         background-color: #393e46;
       }
     </style>
@@ -67,6 +68,9 @@
         >
         <a href="./async-js.html" class="sidebar-link section-btn-7"
           >Asynchronous JavaScript</a
+        >
+        <a href="./mordern-javascript.html" class="sidebar-link section-btn-8"
+          >Modern JavaScript</a
         >
         <a href="./extra-reads.html" class="sidebar-link section-btn-8"
           >Extra Reads</a
@@ -129,6 +133,10 @@
           <div class="image-container">
             <img src="images/func-2.png" alt="" />
           </div>
+          <h2>AN EXAMPLE OF FUNCTION RETURNING FUNCTION -</h2>
+          <div class="image-container">
+            <img src="images/func-10.png" alt="" />
+          </div>
           <h2>THE CALL, APPLY AND BIND METHOD</h2>
           <div class="image-container">
             <img src="images/func-3.png" alt="" />
@@ -181,14 +189,63 @@
           <h2>IIFE - Immediately Invoked Function Expression</h2>
           <p>
             It's just a function expression that is only executed once. <br />We
-            have to wrap the function expression around (). <br />Example -
+            have to wrap the function expression around (). <br />
+            IIFEs were used for data privacy, i.e., to not allow certain
+            variables to be modified from the global scope. Since variables
+            declared with var, let or const are function-scoped, that's why we
+            used IIFEs to define certain variables that cannot be modified from
+            the global scope. <br />
+            Example -
           </p>
           <div class="image-container">
             <img src="images/func-9.png" alt="" />
           </div>
-          <h2>AN EXAMPLE OF FUNCTION RETURNING FUNCTION -</h2>
+          <p>
+            Variables declared with let or const are block scoped as well, so we
+            can use that as well for data privacy.
+          </p>
+          <h2>CLOSURES</h2>
+          <p>
+            A CLOSURE makes a function remember all the variables that existed
+            at the function's birthplace. <br />
+            <br />
+            The secret of the closure is basically this - Any function always
+            has access to the variable environment of the execution context in
+            which the function was created. <br />
+            <br />
+            The closure is the VARIABLE ENVIRONMENT attached to the function,
+            exactly as it was at the time and place that the function was
+            created.<br />
+            <br />
+            Closure has a priority over scope chain, i.e., if a variable does
+            not exists in the local scope of a, the function will look for the
+            variable first in the closure then in the parent scope/s.
+          </p>
           <div class="image-container">
-            <img src="images/func-10.png" alt="" />
+            <img src="images/closures-1.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/closures-2.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/closures-3.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/func-11.png" alt="" />
+          </div>
+          <p>
+            IMPORTANT - Closures contains variables from all levels of scope
+            chain.
+          </p>
+          <div class="image-container">
+            <img src="images/func-12.png" alt="" />
+          </div>
+          <p>More examples of closures</p>
+          <div class="image-container">
+            <img src="images/func-13.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="images/func-14.png" alt="" />
           </div>
         </div>
       </div>

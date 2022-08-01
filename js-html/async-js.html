@@ -35,7 +35,8 @@
       .section-btn-5,
       .section-btn-6,
       .section-btn-2,
-      .section-btn-8 {
+      .section-btn-8,
+      .section-btn-9 {
         background-color: #393e46;
       }
     </style>
@@ -67,6 +68,9 @@
         >
         <a href="./async-js.html" class="sidebar-link section-btn-7"
           >Asynchronous JavaScript</a
+        >
+        <a href="./mordern-javascript.html" class="sidebar-link section-btn-8"
+          >Modern JavaScript</a
         >
         <a href="./extra-reads.html" class="sidebar-link section-btn-8"
           >Extra Reads</a
@@ -112,32 +116,61 @@
           </div>
           <h2>PROMISES AND FETCH API</h2>
           <p>
-            It is an object that is used as a placeholder for the future result
-            of an asynchronous operation. A promise is like a lottery ticket.
+            Promise is an object that is used as a placeholder for the future
+            result of an asynchronous operation. A promise is like a lottery
+            ticket. <br />
+            <br />
+            Fetch is the mordern way of making AJAX calls.
           </p>
           <div class="image-container">
             <img src="images/promises.png" alt="" />
           </div>
           <p>
-            const request = fetch("https://restcountries.com/v2/name/usa"); //
-            Here, on console logging request, what we get is the promise. <br />
+            <span class="imp">
+              const request = fetch("https://restcountries.com/v2/name/usa"); //
+              Here, on console logging request, what we get is the promise.
+            </span>
             <br />
-            In the beginning, we say that a promise is pending. This is before
-            any value resulting from the asynchronous task is available. Now,
-            during this time, the asynchronous task is still doing its work in
-            the background. When the asynchronous task finally finishes, we say
-            that the promise is settled and there are two different types of
-            settled promises and that's fulfilled promises and rejected
-            promises. A fulfilled promise is a promise that has successfully
-            resulted in a value just as we expect it and it's now available to
-            being used. On the other hand, a rejected promise means that there
-            has been an error during the asynchronous task. <br />
+            <br />
+            In the beginning, when any value from the asynchronous task is
+            unavailable, we say that a promise is pending. Now, during this
+            time, the asynchronous task is still doing its work in the
+            background. When the asynchronous task finally finishes, we say that
+            the promise is settled and there are two different types of settled
+            promises and that's fulfilled promises and rejected promises. A
+            fulfilled promise is a promise that has successfully resulted in a
+            value just as we expect it and it's now available to being used. On
+            the other hand, a rejected promise means that there has been an
+            error during the asynchronous task. <br />
             A promise is either fulfilled or rejected, it is impossible to
             change it's state. <br />
             <br />Life-cycle of a promise -
           </p>
           <div class="image-container">
             <img src="images/promise-life-cycle.png" alt="" />
+          </div>
+          <h2>CONSUMING PROMISES</h2>
+          <p>
+            .then() is a method that is available on all the promises. <br />
+            It's callback function is executed as soon as promise is fulfilled.
+            <br />
+            It's callback function's argument is the fulfilled value of the
+            promise that we are calling it upon. <br />
+            The "then" method always returns a promise, no matter if we actually
+            return anything or not. But if we do return a value, then that value
+            will become the fulfillment value of the return promise.
+            <br />
+            <br />
+            In order to read the body of the response, we need to call .json()
+            method on it.
+            <br />
+            <br />
+            json() method is also an asynchronous function, therefore we again
+            get a new promise, hence we use the .then() method twice in the
+            example below.
+          </p>
+          <div class="image-container">
+            <img src="images/async-3.png" alt="" />
           </div>
         </div>
       </div>
